@@ -8,6 +8,5 @@ test('loadUser', () => {
 
   loadUser(1);
 
-  expect(httpGet).toBeCalledTimes(1);
   expect(httpGet).toBeCalledWith('http://server:8080/users/1');
 });
