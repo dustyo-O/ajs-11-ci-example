@@ -12,7 +12,10 @@
     "preshow:coverage": "npm run coverage",
     "show:coverage": "live-server coverage/lcov-report",
     "preshow:dist": "npm run build",
-    "show:dist": "live-server dist"
+    "show:dist": "live-server dist",
+    "postinstall": "husky install",
+    "prepublish": "pinst --disable",
+    "postpublish": "pinst --enable"
   },
   "author": "coursar",
   "license": "MIT",
@@ -28,9 +31,11 @@
     "eslint-plugin-import": "^2.20.2",
     "html-loader": "^1.1.0",
     "html-webpack-plugin": "^4.0.4",
+    "husky": "^5.0.4",
     "jest": "^25.2.7",
     "live-server": "^1.2.1",
     "mini-css-extract-plugin": "^0.9.0",
+    "pinst": "^2.1.1",
     "webpack": "^4.42.1",
     "webpack-cli": "^3.3.11",
     "webpack-dev-server": "^3.10.3"
