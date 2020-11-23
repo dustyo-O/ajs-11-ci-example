@@ -19,5 +19,6 @@ export default function calculateCashback(amount) {
 
   if (!loyalityProgram) return 0;
 
+  // eslint-disable-next-line no-mixed-operators
   return Math.ceil(amount * cashback[loyalityProgram].percent / 100);
 }
